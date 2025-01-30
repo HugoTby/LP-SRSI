@@ -1,0 +1,103 @@
+
+/* header */
+
+header {
+        background: #ffffff ;
+        padding-top: 30px;
+        padding-bottom:26px;
+        padding-left: 50px;
+}
+
+header h1 {
+        font-size: 52px;
+        color: #021952;
+}
+
+header h2 {
+        font-size: 30px;
+        color: #004175;
+        padding-left: 10px;
+}
+
+header h1, h2{
+        display: inline-block;
+}
+
+header img{
+	height: 150px;
+  	width: 225px;
+	vertical-align:middle;
+	
+}
+
+
+/* menu */
+#menu {
+        font-size: 18px;
+        color: #ffffff;
+        background: #691f38;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+}
+
+#menu a { 
+        color: #ffffff;
+        text-decoration:none;
+}
+
+#menu a:hover {
+        color: #ffb717;    
+}
+
+
+#menu td {
+        padding-left: 40px;
+}
+
+/* body */ 
+
+#main {
+        padding-left: 100px;
+        padding-top: 25px;    
+        position: relative;
+        width: 760px;
+        margin-bottom: 50px;
+}
+
+#main p {
+        padding-bottom: 12px;
+}
+
+#main a { 
+        text-decoration:none; 
+        font-weight:bold;
+        color: #666;
+}
+
+#main h1 {
+        font-size: 40px;
+        color: #474747;
+        padding-bottom: 12px;
+} 
+
+#main h1:before {
+        content: "//";
+        color: #ff4500;
+        padding-right: 15px;
+}
+
+#main h1:after {
+        content: "//";
+        color: #ff4500;
+        padding-left: 15px;
+}
+
+#main h2 {
+        font-size: 30px;
+        color: #474747;
+        padding-bottom: 18px;
+} 
+
+
+
