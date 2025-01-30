@@ -5,7 +5,7 @@
 $db_server = "127.0.0.1";
 $db_username = "XXX";
 $db_password = "XXXXX";
-$db_name = "mon_site";
+$db_name = "nocq";
 
 $co = new mysqli($db_server, $db_username, $db_password, $db_name);
 $conn = $co;
@@ -74,8 +74,55 @@ if (isset($_POST['valider'])) {
     
     <h1>Recherche de messages</h1>
     <br>
-    <input type="text" style="width:500px" />
-    <input type="submit" value="Chercher"/>
+    <form method='GET'>
+    <input type="text" name='motif' style="width:500px" />
+    <input type="submit" name='recherche_messages' value="Chercher"/>
+    </form>
+    <?php if (!empty($_GET['motif'])) {echo "mot clé cherché : ${_GET['motif']}";} ?>
+		
+<?php 
+	//$sql = "SELECT * FROM messages INNER JOIN visiteurs ON messages.visiteur_id = visiteurs.id";
+	$sql = "SELECT * FROM messages INNER JOIN visiteurs ON messages.visiteur_id = visiteurs.id ";
+	if (!empty($_GET['recherche_messages'])) {
+		$sql .= " WHERE message LIKE '%" . $_GET['motif'] . "%'";
+	}
+	$recordset = $co->query($sql) or die("Problème de récupération des messages");
+	
+	if(mysqli_num_rows($recordset) == 0) 
+	{
+?>
+			Aucun message trouvé
+<?php
+	}
+	else
+	{
+?>
+		<table>
+
+			<tr>
+				<td width="100"><b>pseudo</b></td>
+				<td width="500"><b>message</b></td>
+			</tr> 
+<?php
+		while($row = $recordset->fetch_object())
+		{
+?>
+			<tr height="40">
+				<td><?php echo $row->pseudo; ?></td>
+				<td><?php echo $row->message; ?></td>
+			</tr>
+
+<?php          
+		}
+?>
+		</table>
+<?php 
+	}
+	$recordset->close();
+	$co->close();
+?>
+
+
     <br>
     <h1>Insertion de messages</h1>
     <br>
@@ -84,5 +131,7 @@ if (isset($_POST['valider'])) {
         <input type="text" name="message" style="width:500px" />
         <input type="submit" name="valider" value="Ajouter"/>
     </form>
+    
+    <br><br>
 </body>
 </html>
